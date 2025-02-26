@@ -1,0 +1,182 @@
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  overflow: hidden;
+}
+
+.presentation-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #2a2a2a;
+}
+
+.presentation-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #60a5fa;
+  margin: 0;
+}
+
+.presentation-header span {
+  margin-left: 0.5rem;
+  color: #9ca3af;
+}
+
+.presentation-content {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: opacity 0.5s;
+}
+
+@media (min-width: 768px) {
+  .slide-content {
+    flex-direction: row;
+  }
+}
+
+.visual-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .visual-section {
+    width: 60%;
+    flex-shrink: 0;
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 36rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.image-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  background: linear-gradient(to top, #1a1a1a, transparent);
+}
+
+.text-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .text-section {
+    width: 40%;
+  }
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 1.5rem;
+}
+
+.text-section p {
+  font-size: 1.125rem;
+  color: #e5e7eb;
+  line-height: 1.75;
+}
+
+.navigation-controls {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.navigation-controls.visible {
+  opacity: 1;
+}
+
+.controls-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(42, 42, 42, 0.7);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: none;
+  background: none;
+  color: white;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(75, 75, 75, 0.7);
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #4a4a4a;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #60a5fa;
+  transition: width 0.3s ease-in-out;
+}
+
+.presentation-footer {
+  padding: 1rem;
+  background-color: #2a2a2a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-counter,
+.copyright {
+  font-size: 0.875rem;
+  color: #9ca3af;
+} 
