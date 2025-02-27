@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Pause, Mail } from 'lucide-react';
 import './WebWorldPresentation.css';
 
 interface Slide {
@@ -12,10 +12,18 @@ interface VisualMap {
   [key: string]: string;
 }
 
+interface DialogProps {
+  onClose: () => void;
+  onSubmit: (email: string) => void;
+}
+
 const WebWorldPresentation: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(true);
+  const [showDialog, setShowDialog] = useState(false);
+  const [email, setEmail] = useState('');
+  const [submitStatus, setSubmitStatus] = useState('');
 
   const slides: Slide[] = [
     {
@@ -96,6 +104,23 @@ const WebWorldPresentation: React.FC = () => {
 
   const progressPercentage = ((currentSlide + 1) / slides.length) * 100;
 
+  const handleContact = () => {
+    setShowDialog(true);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Use encodeURIComponent for proper URL encoding and remove special characters
+    const body = encodeURIComponent("I'm interested in learning more about WebWorld.\n\nEmail: " + email);
+    window.location.href = `mailto:info@tuuyi.com?subject=WebWorld%20Access%20Request&body=${body}`;
+    setSubmitStatus('Thank you for your interest!');
+    setTimeout(() => {
+      setShowDialog(false);
+      setSubmitStatus('');
+      setEmail('');
+    }, 2000);
+  };
+
   return (
     <div 
       className="presentation-container"
@@ -122,6 +147,12 @@ const WebWorldPresentation: React.FC = () => {
           <div className="text-section">
             <h2>{slides[currentSlide].title}</h2>
             <p>{slides[currentSlide].message}</p>
+            {currentSlide === slides.length - 1 && (
+              <button onClick={handleContact} className="contact-button">
+                <Mail size={20} />
+                Contact Us
+              </button>
+            )}
           </div>
         </div>
 
@@ -157,6 +188,29 @@ const WebWorldPresentation: React.FC = () => {
           WebWorld © 2025
         </div>
       </footer>
+
+      {showDialog && (
+        <div className="email-dialog-overlay">
+          <div className="email-dialog">
+            <h3>Contact Us</h3>
+            <p>Enter your email to learn more about WebWorld</p>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your email address"
+                required
+              />
+              <div className="dialog-buttons">
+                <button type="submit">Submit</button>
+                <button type="button" onClick={() => setShowDialog(false)}>Cancel</button>
+              </div>
+            </form>
+            {submitStatus && <p className="status-message">{submitStatus}</p>}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
