@@ -29,7 +29,7 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Introduction",
       visual: "landing-page",
-      message: "Unleash unprecedented creative control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Peer into their minds to observe their thoughts, emotional reactions, and evolving relationships. Intervene at any moment to redirect narratives or question characters directly about their motivations. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
+      message: "Unleash unprecedented creative control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Observe their inner thoughts, emotions, and evolving relationships. Interact with them. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
     {
       title: "Engagement-Driven Simulation",
       visual: "character-panel",
@@ -38,12 +38,12 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Cognitive Architecture",
       visual: "core-state",
-      message: "The most advanced cognitive architecture in the industry, for those who need to create characters with authentic psychology. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy those drives, and act based on their perception of the world around them."
+      message: "Webworld embeds a cognitive architecture based on the latest research in cognitive science, for those who need to create characters with authentic psychology. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy impulses arising from interaction between drives and perceptions, and act grounded in their perception of the world around them."
     },
     {
       title: "Memory System",
       visual: "memory-tab",
-      message: "Characters don't just react - they remember and learn. WebWorld's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions."
+      message: "Characters don't just react to raw input- they perceive,remember and learn. WebWorld's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions. Characters learn about their acts, goals, and the characters they interact with."
     },
     {
       title: "Social Dynamics",
@@ -53,7 +53,12 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Drive Signals & Character Motivation",
       visual: "signals-tab",
-      message: "Character behavior is motivated by 'drive signals' - opportunities and issues that arise from the interaction between a character's fundamental needs and desires, and their perceptions of the events around them. These shape goals and tasks in a dynamic way that creates emergent narrative without scripting."
+      message: "Character behavior is motivated by 'drive signals' - opportunities and issues that arise from the interaction of a character's fundamental needs and desires, with their perceptions of the events around them. These shape goals and tasks in a dynamic way that creates emergent narrative without scripting."
+    },
+    {
+      title: "Dynamic World",
+      visual: "landing-page",
+      message: "Webworld includes a dynamic world characters can percieve, move in, and interact with. While Webworld's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
     },
     {
       title: "Transformative AI for Character Simulation",
