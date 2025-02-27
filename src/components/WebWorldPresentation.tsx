@@ -62,18 +62,19 @@ const WebWorldPresentation: React.FC = () => {
     },
     {
       title: "Transformative AI for Character Simulation",
-      visual: "landing-page",
+      visual: "world-tab",
       message: "Whether you are a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. Contact us to explore how WebWorld can enhance your creative or professional practice."
     }
   ];
 
   const visualPlaceholders: VisualMap = {
-    "landing-page": "/images/Webworld_main_screen.png",
+    "landing-page": "/images/WebworldMain.png",
     "character-panel": "/images/CharacterPanelDetail.png",
     "core-state": "/images/CharacterExplorerCoreTab.png",
     "memory-tab": "/images/CharacterExplorerMemoryTab.png",
     "social-tab": "/images/CharacterExplorerSocialTab.png",
-    "signals-tab": "/images/CharacterExplorerSignalsTab.png"
+    "signals-tab": "/images/CharacterExplorerSignalsTab.png",
+    "world-tab": "/images/Webworld_main_screen.png"
   };
 
   useEffect(() => {
