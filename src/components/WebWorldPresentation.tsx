@@ -29,37 +29,36 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Introduction",
       visual: "landing-page",
-      message: "WebWorld is a revolutionary platform that brings AI minds to life through sophisticated cognitive frameworks. Watch as characters with complex internal states interact, form relationships, and navigate challenges authentically."
-    },
+      message: "Unleash unprecedented creative control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Peer into their minds to observe their thoughts, emotional reactions, and evolving relationships. Intervene at any moment to redirect narratives or question characters directly about their motivations. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
     {
-      title: "Character-Driven Simulation",
+      title: "Engagement-Driven Simulation",
       visual: "character-panel",
-      message: "Each character in WebWorld possesses a unique cognitive architecture complete with drives, goals, memories, and emotional states. These aren't static scripts - they're dynamic minds making decisions in real-time based on their internal states and external stimuli."
+      message: "Characters in WebWorld are driven by the interaction of their perceptions with their innate drives, memories, emotional states, even internal models of other characters. These aren't static scripts - they're dynamic, evolving minds making decisions in real-time based on their internal state and perceptions of the world around them."
     },
     {
       title: "Cognitive Architecture",
       visual: "core-state",
-      message: "Behind every character is a sophisticated cognitive model. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy those drives, and make decisions based on their perception of the world around them."
+      message: "The most advanced cognitive architecture in the industry, for those who need to create characters with authentic psychology. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy those drives, and act based on their perception of the world around them."
     },
     {
       title: "Memory System",
       visual: "memory-tab",
-      message: "Characters don't just react - they remember. WebWorld's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions."
+      message: "Characters don't just react - they remember and learn. WebWorld's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions."
     },
     {
       title: "Social Dynamics",
       visual: "social-tab",
-      message: "Characters build relationships that evolve naturally over time. They remember past interactions, form impressions, and adjust their behavior accordingly. Watch as they develop trust, navigate conflicts, and form authentic bonds."
+      message: "Characters build relationships that evolve naturally over time. They remember past interactions, form impressions, including their own internal models of other characters, and adjust their behavior accordingly. Watch as they develop trust, navigate conflicts, and form authentic bonds. Or not."
     },
     {
       title: "Drive Signals & Character Motivation",
       visual: "signals-tab",
-      message: "Character behavior is motivated by drive signals - opportunities and issues that arise from their fundamental needs and desires. These shape goals and tasks in a dynamic way that creates emergent narrative without scripting."
+      message: "Character behavior is motivated by 'drive signals' - opportunities and issues that arise from the interaction between a character's fundamental needs and desires, and their perceptions of the events around them. These shape goals and tasks in a dynamic way that creates emergent narrative without scripting."
     },
     {
-      title: "Transform Your Creative & Professional Practice",
+      title: "Transformative AI for Character Simulation",
       visual: "landing-page",
-      message: "Whether a creative needing to explore human behavior, researching human or AI behavior, or developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. Contact us to explore how WebWorld can enhance your creative or professional practice."
+      message: "Whether you are a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. Contact us to explore how WebWorld can enhance your creative or professional practice."
     }
   ];
 
