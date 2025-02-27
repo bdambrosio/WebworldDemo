@@ -29,7 +29,7 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Introduction",
       visual: "landing-page",
-      message: "Unleash unprecedented creative control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Observe their inner thoughts, emotions, and evolving relationships. Interact with them. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
+      message: "Unleash creative insight and control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Observe their inner thoughts, emotions, and evolving relationships. Interact with them. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
     {
       title: "Engagement-Driven Simulation",
       visual: "character-panel",
