@@ -57,12 +57,12 @@ const WebWorldPresentation: React.FC = () => {
     },
     {
       title: "Dynamic World",
-      visual: "landing-page",
+      visual: "world-tab",
       message: "Webworld includes a dynamic world characters can percieve, move in, and interact with. While Webworld's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
     },
     {
       title: "Transformative AI for Character Simulation",
-      visual: "world-tab",
+      visual: "landing-page",
       message: "Whether you are a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. Contact us to explore how WebWorld can enhance your creative or professional practice."
     }
   ];
