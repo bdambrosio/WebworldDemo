@@ -266,4 +266,13 @@
   margin-top: 1rem;
   color: #60a5fa;
   text-align: center;
+}
+
+.directors-chair-container {
+  height: 800px !important; /* Adjust this value as needed */
+}
+
+.directors-chair-container img {
+  object-fit: contain;
+  height: 100%;
 } 

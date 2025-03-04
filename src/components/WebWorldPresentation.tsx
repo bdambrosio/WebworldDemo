@@ -56,6 +56,11 @@ const WebWorldPresentation: React.FC = () => {
       message: "Character behavior is motivated by 'drive signals' - opportunities and issues that arise from the interaction of a character's fundamental needs and desires, with their perceptions of the events around them. These shape goals and tasks in a dynamic way that creates emergent narrative without scripting."
     },
     {
+      title: "Director's Chair",
+      visual: "directors-chair",
+      message: "Set the details of each character's autonomy. Talk with characters in real-time. Choose their goals, tasks, or step by step actions, or let them decide for themselves.\n What are they thinking? Why did he or she do that?"
+    },
+    {
       title: "Dynamic World",
       visual: "world-tab",
       message: "Webworld includes a dynamic world characters can percieve, move in, and interact with. While Webworld's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
@@ -74,6 +79,7 @@ const WebWorldPresentation: React.FC = () => {
     "memory-tab": "/images/CharacterExplorerMemoryTab.png",
     "social-tab": "/images/CharacterExplorerSocialTab.png",
     "signals-tab": "/images/CharacterExplorerSignalsTab.png",
+    "directors-chair": "/images/DirectorsChairComposite.png",
     "world-tab": "/images/Webworld_main_screen.png"
   };
 
@@ -140,7 +146,7 @@ const WebWorldPresentation: React.FC = () => {
       <div className="presentation-content">
         <div className="slide-content">
           <div className="visual-section">
-            <div className="image-container">
+            <div className={`image-container ${slides[currentSlide].visual === 'directors-chair' ? 'directors-chair-container' : ''}`}>
               <img 
                 src={visualPlaceholders[slides[currentSlide].visual]} 
                 alt={slides[currentSlide].title} 
