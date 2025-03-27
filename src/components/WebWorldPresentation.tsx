@@ -68,7 +68,7 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Transformative AI for Character Simulation",
       visual: "landing-page",
-      message: "Whether you are a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. Contact us to explore how WebWorld can enhance your creative or professional practice."
+      message: "Whether you are an LLM/AI devo wanting to explore the intersection of LLMs and character simulation, a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. grab the code and try it out for yourself. Contact us if you want to explore how WebWorld can enhance your creative or professional practice."
     }
   ];
 
