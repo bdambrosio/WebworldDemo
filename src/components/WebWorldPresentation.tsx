@@ -27,18 +27,18 @@ const WebWorldPresentation: React.FC = () => {
 
   const slides: Slide[] = [
     {
-      title: "Introduction",
+      title: "ImprovAI",
       visual: "landing-page",
-      message: "Unleash creative insight and control with WebWorld's groundbreaking cognitive modeling platform. Create characters with authentic psychology, place them in custom scenarios, and watch as they navigate complex emotional landscapes with genuine autonomy. Observe their inner thoughts, emotions, and evolving relationships. Interact with them. WebWorld isn't just simulation — it's the future of narrative creation where stories unfold organically through truly intelligent characters."   },
+      message: "ImprovAI pioneers intelligent character-driven performances where authentic psychology meets interactive storytelling. Create characters with genuine emotional depth, place them in dynamic scenarios, and direct emergent narratives as they unfold in real-time. Whether crafting immersive experiences, exploring procedural storytelling, or managing live improvisational performances, ImprovAI gives creators unprecedented control over truly autonomous characters. This isn't just simulation — it's a new medium for collaborative narrative creation."   },
     {
       title: "Engagement-Driven Simulation",
       visual: "character-panel",
-      message: "Characters in WebWorld are driven by the interaction of their perceptions with their innate drives, memories, emotional states, even internal models of other characters. These aren't static scripts - they're dynamic, evolving minds making decisions in real-time based on their internal state and perceptions of the world around them."
+      message: "Characters in ImprovAI are driven by the interaction of their perceptions with their innate drives, memories, emotional states, even internal models of other characters. These aren't static scripts - they're dynamic, evolving minds making decisions in real-time based on their internal state and perceptions of the world around them."
     },
     {
       title: "Cognitive Architecture",
       visual: "core-state",
-      message: "Webworld embeds a cognitive architecture based on the latest research in cognitive science, for those who need to create characters with authentic psychology. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy impulses arising from interaction between drives and perceptions, and act grounded in their perception of the world around them."
+      message: "ImprovAI embeds a cognitive architecture based on the latest research in cognitive science, for those who need to create characters with authentic psychology. Characters maintain drives that motivate their behavior, form goals and tasks to satisfy impulses arising from interaction between drives and perceptions, and act grounded in their perception of the world around them."
     },
     {
       title: "Memory System",
@@ -63,12 +63,12 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Dynamic World",
       visual: "world-tab",
-      message: "Webworld includes a dynamic world characters can percieve, move in, and interact with. While Webworld's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
+      message: "ImprovAI includes a dynamic world characters can percieve, move in, and interact with. While ImprovAI's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
     },
     {
       title: "Transformative AI for Character Simulation",
       visual: "landing-page",
-      message: "Whether you are an LLM/AI devo wanting to explore the intersection of LLMs and character simulation, a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, WebWorld offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. grab the code and try it out for yourself. Contact us if you want to explore how WebWorld can enhance your creative or professional practice."
+      message: "Whether you are an LLM/AI devo wanting to explore the intersection of LLMs and character simulation, a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, ImprovAI offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. grab the code and try it out for yourself. Contact us if you want to explore how ImprovAI can enhance your creative or professional practice."
     }
   ];
 
