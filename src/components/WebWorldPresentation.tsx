@@ -12,12 +12,11 @@ interface VisualMap {
   [key: string]: string;
 }
 
-interface DialogProps {
-  onClose: () => void;
-  onSubmit: (email: string) => void;
+interface WebWorldPresentationProps {
+  showHeader?: boolean;
 }
 
-const WebWorldPresentation: React.FC = () => {
+const WebWorldPresentation: React.FC<WebWorldPresentationProps> = ({ showHeader = true }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showControls, setShowControls] = useState(true);
@@ -43,7 +42,7 @@ const WebWorldPresentation: React.FC = () => {
     {
       title: "Memory System",
       visual: "memory-tab",
-      message: "Characters don't just react to raw input- they perceive,remember and learn. WebWorld's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions. Characters learn about their acts, goals, and the characters they interact with."
+      message: "Characters don't just react to raw input- they perceive,remember and learn. ImprovAI's memory system creates both concrete memories of specific events and abstract memories that represent patterns of experience, allowing characters to learn and evolve through their interactions. Characters learn about their acts, goals, and the characters they interact with."
     },
     {
       title: "Social Dynamics",
@@ -122,8 +121,8 @@ const WebWorldPresentation: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Use encodeURIComponent for proper URL encoding and remove special characters
-    const body = encodeURIComponent("I'm interested in learning more about WebWorld.\n\nEmail: " + email);
-    window.location.href = `mailto:info@tuuyi.com?subject=WebWorld%20Access%20Request&body=${body}`;
+    const body = encodeURIComponent("I'm interested in learning more about ImprovAI.\n\nEmail: " + email);
+    window.location.href = `mailto:info@tuuyi.com?subject=ImprovAI%20Access%20Request&body=${body}`;
     setSubmitStatus('Thank you for your interest!');
     setTimeout(() => {
       setShowDialog(false);
@@ -138,10 +137,12 @@ const WebWorldPresentation: React.FC = () => {
       onMouseEnter={() => setShowControls(true)}
       onMouseLeave={() => setShowControls(false)}
     >
-      <header className="presentation-header">
-        <h1>WebWorld</h1>
-        <span>AI Characters in Living Stories</span>
-      </header>
+      {showHeader && (
+        <header className="presentation-header">
+          <h1>ImprovAI</h1>
+          <span>AI Characters in Living Stories</span>
+        </header>
+      )}
 
       <div className="presentation-content">
         <div className="slide-content">
@@ -196,7 +197,7 @@ const WebWorldPresentation: React.FC = () => {
           Slide {currentSlide + 1} of {slides.length}
         </div>
         <div className="copyright">
-          WebWorld © 2025
+          ImprovAI © 2025
         </div>
       </footer>
 
@@ -204,7 +205,7 @@ const WebWorldPresentation: React.FC = () => {
         <div className="email-dialog-overlay">
           <div className="email-dialog">
             <h3>Contact Us</h3>
-            <p>Enter your email to learn more about WebWorld</p>
+            <p>Enter your email to learn more about ImprovAI</p>
             <form onSubmit={handleSubmit}>
               <input
                 type="email"
