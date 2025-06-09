@@ -65,9 +65,9 @@ const WebWorldPresentation: React.FC<WebWorldPresentationProps> = ({ showHeader 
       message: "ImprovAI includes a dynamic world characters can percieve, move in, and interact with. While ImprovAI's primary focus is on cognitive modeling, this ever-changing world provides a rich environment that keep characters engaged and active"
     },
     {
-      title: "Transformative AI for Character Simulation",
+      title: "Advanced Character AI for Interactive Narratives",
       visual: "landing-page",
-      message: "Whether you are an LLM/AI devo wanting to explore the intersection of LLMs and character simulation, a creative needing to explore human behavior, a researcher needing realistic simulations, or a therapist developing innovative counseling tools, ImprovAI offers unprecedented capabilities. Join us in pioneering the future of AI-driven character simulation. grab the code and try it out for yourself. Contact us if you want to explore how ImprovAI can enhance your creative or professional practice."
+      message: "Whether you're developing interactive fiction, creating immersive entertainment experiences, or building narrative-driven games, ImprovAI provides the cognitive architecture needed for truly autonomous characters. Our memory systems, drive-based motivation, and emergent behavior capabilities solve the core challenges of creating believable, consistent characters that can sustain long-form interactive narratives. Ready to move beyond scripted dialogue trees? Explore our documentation and examples, or contact us to discuss how ImprovAI's character simulation capabilities can enhance your narrative projects."
     }
   ];
 

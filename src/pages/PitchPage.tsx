@@ -14,33 +14,14 @@ interface PartnerCategory {
 const PitchPage: React.FC = () => {
   const partnerCategories: PartnerCategory[] = [
     {
-      id: 'research',
-      title: 'Research & Academic',
-      icon: <GraduationCap size={24} />,
-      description: 'Advancing the science of character simulation and AI behavior',
-      valuePropositions: [
-        'Access to cutting-edge cognitive architecture for character simulation research',
-        'Collaboration opportunities on psychology, AI, and behavioral studies',
-        'Publication and research partnership programs',
-        'Custom character models for specific research needs',
-        'Academic licensing and educational discounts'
-      ],
-      benefits: [
-        'Advance your research with state-of-the-art AI',
-        'Publish groundbreaking studies on character behavior',
-        'Access to our research team and expertise',
-        'Flexible academic licensing terms'
-      ]
-    },
-    {
       id: 'gaming',
       title: 'Game & Entertainment',
       icon: <Gamepad2 size={24} />,
       description: 'Creating truly dynamic, believable characters for interactive experiences',
       valuePropositions: [
         'Advanced NPC AI that creates truly dynamic, believable characters',
-        'Scriptless narrative generation - characters drive their own stories',
-        'Integration APIs for existing game engines and platforms',
+        'Scriptless narrative generation with globally coherent storytelling',
+        'Live performance direction - interact with characters and adjust scenes in real-time',
         'Character behavior that evolves based on player interactions',
         'Reduced development time for complex character systems'
       ],
@@ -49,25 +30,6 @@ const PitchPage: React.FC = () => {
         'Create emergent storytelling experiences',
         'Increase player engagement and retention',
         'Stand out with next-generation AI characters'
-      ]
-    },
-    {
-      id: 'enterprise',
-      title: 'Enterprise & Training',
-      icon: <Building2 size={24} />,
-      description: 'Realistic human behavior simulation for professional training',
-      valuePropositions: [
-        'Realistic human behavior simulation for training scenarios',
-        'Customer service training with authentic character responses',
-        'Leadership and management training simulations',
-        'Customizable scenarios for industry-specific needs',
-        'Scalable deployment across organizations'
-      ],
-      benefits: [
-        'Improve training effectiveness with realistic scenarios',
-        'Reduce training costs with scalable AI solutions',
-        'Measure and track training performance',
-        'Deploy across multiple locations and teams'
       ]
     },
     {
@@ -87,6 +49,44 @@ const PitchPage: React.FC = () => {
         'Maintain character consistency across projects',
         'Explore new forms of interactive storytelling',
         'Integrate seamlessly with existing workflows'
+      ]
+    },
+    {
+      id: 'research',
+      title: 'Research & Academic',
+      icon: <GraduationCap size={24} />,
+      description: 'Advancing the science of character simulation and AI behavior',
+      valuePropositions: [
+        'Access to cutting-edge cognitive architecture for character simulation research',
+        'Collaboration opportunities on psychology, AI, and behavioral studies',
+        'Publication and research partnership programs',
+        'Custom character models for specific research needs',
+        'Academic licensing and educational discounts'
+      ],
+      benefits: [
+        'Advance your research with state-of-the-art AI',
+        'Publish groundbreaking studies on character behavior',
+        'Access to our research team and expertise',
+        'Flexible academic licensing terms'
+      ]
+    },
+    {
+      id: 'enterprise',
+      title: 'Enterprise & Training',
+      icon: <Building2 size={24} />,
+      description: 'Realistic human behavior simulation for professional training',
+      valuePropositions: [
+        'Realistic human behavior simulation for training scenarios',
+        'Customer service training with authentic character responses',
+        'Leadership and management training simulations',
+        'Customizable scenarios for industry-specific needs',
+        'Scalable deployment across organizations'
+      ],
+      benefits: [
+        'Improve training effectiveness with realistic scenarios',
+        'Reduce training costs with scalable AI solutions',
+        'Measure and track training performance',
+        'Deploy across multiple locations and teams'
       ]
     },
     {
@@ -143,19 +143,27 @@ const PitchPage: React.FC = () => {
       <div className="pitch-content">
         <div className="partner-tabs">
           {partnerCategories.map((category, index) => (
-            <button
-              key={category.id}
-              className={`partner-tab ${index === activeCategory ? 'active' : ''}`}
-              onClick={() => setActiveCategory(index)}
-            >
-              <div className="tab-icon">
-                {category.icon}
-              </div>
-              <div className="tab-content">
-                <h3>{category.title}</h3>
-                <p>{category.description}</p>
-              </div>
-            </button>
+            <React.Fragment key={category.id}>
+              <button
+                className={`partner-tab ${index === activeCategory ? 'active' : ''}`}
+                onClick={() => setActiveCategory(index)}
+              >
+                <div className="tab-icon">
+                  {category.icon}
+                </div>
+                <div className="tab-content">
+                  <h3>{category.title}</h3>
+                  <p>{category.description}</p>
+                </div>
+              </button>
+              {index === 1 && (
+                <div className="partner-section-divider">
+                  <div className="divider-line"></div>
+                  <div className="divider-label">Additional Markets</div>
+                  <div className="divider-line"></div>
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
 
